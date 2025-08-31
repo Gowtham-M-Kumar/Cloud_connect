@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block title %}Home • ChatX{% endblock %}
+{% block content %}
+<!-- Main Feed -->
+<main class="feed">
+  <!-- Stories Row -->
+  <section class="stories">
+    <div class="stories__scroller">
+      <!-- 10 demo stories -->
+      <button class="story" title="Your story">
+        <span class="ring">
+          <img src="https://i.pravatar.cc/100?img=1" alt="you" />
+        </span>
+        <span class="story__name">you</span>
+      </button>
+      <button class="story"><span class="ring"><img src="https://i.pravatar.cc/100?img=2" alt="" /></span><span class="story__name">alexa</span></button>
+      
+    </div>
+  </section>
+
+  <!-- One demo post card -->
+
+  {% for post in post_items %}
+  <article class="card">
+    <header class="card__header">
+      <div class="user">
+        <img class="user__avatar" src="https://i.pravatar.cc/64?img=12" alt="avatar" />
+        <div class="user__meta">
+          <div class="user__name">{{ post.user.username }}</div>
+          <div class="user__sub">Kochi, India • 34m</div>
+        </div>
+      </div>
+      <button class="icon-btn"><i class="fa-solid fa-ellipsis"></i></button>
+    </header>
+    <div class="card__media">
+      <img src="https://picsum.photos/seed/insta1/900/900" alt="post" />
+    </div>
+    <div class="card__actions">
+      <div class="left">
+        <button class="icon-btn js-like" aria-label="like"><i class="fa-regular fa-heart"></i></button>
+        <button class="icon-btn" aria-label="comment"><i class="fa-regular fa-comment"></i></button>
+        <button class="icon-btn" aria-label="share"><i class="fa-regular fa-paper-plane"></i></button>
+      </div>
+      <div class="right">
+        <button class="icon-btn" aria-label="save"><i class="fa-regular fa-bookmark"></i></button>
+      </div>
+    </div>
+    <div class="card__likes"><span class="bold">790</span> likes</div>
+    <div class="card__caption"><span class="bold">new_media</span> Sensational boards and dialogues...</div>
+    <div class="card__comments">View all 42 comments</div>
+    <div class="card__add-comment">
+      <input type="text" placeholder="Add a comment..." />
+      <button class="post-btn" disabled>Post</button>
+    </div>
+  </article>
+  {% endfor %}
+</main>
+{% endblock %}
+
+

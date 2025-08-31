@@ -1,0 +1,67 @@
+
+.create-container {
+  max-width: 400px;
+  margin: 60px auto;
+  background: #181818;
+  border-radius: 16px;
+  padding: 32px 24px;
+  color: #fff;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+.create-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.create-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: #aaa;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+.upload-label i {
+  font-size: 2.5rem;
+  margin-bottom: 6px;
+}
+#create-upload {
+  display: none;
+}
+.create-caption textarea {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #222;
+  color: #fff;
+  padding: 12px;
+  font-size: 1rem;
+  resize: none;
+}
+.create-btn {
+  background: #0095f6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.create-btn:hover {
+  background: #0077b6;
+}

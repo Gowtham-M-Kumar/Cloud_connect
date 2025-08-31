@@ -1,0 +1,197 @@
+
+/* Dashboard Black Dark Theme - All classes inherited from dashboard.html */
+.body{
+  background: var(--bg);
+}
+
+.app {
+	background: #18181b;
+	min-height: 100vh;
+	display: flex;
+	font-family: 'Inter', sans-serif;
+}
+
+.sidebar {
+	width: 260px;
+	background: #18181b;
+	border-right: 1px solid #23232a;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 32px 0;
+	box-shadow: 2px 0 16px rgba(0,0,0,0.18);
+}
+.brand {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #6366f1;
+	margin-bottom: 36px;
+}
+.nav {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.nav__item {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 12px 32px;
+	color: #e5e7eb;
+	text-decoration: none;
+	font-size: 1.08rem;
+	border-radius: 8px;
+	transition: background 0.2s, color 0.2s;
+}
+.nav__item--active, .nav__item:hover {
+	background: #18181b;
+	color: #6366f1;
+}
+.nav__item i {
+	font-size: 1.2rem;
+}
+
+.admin_feed {
+	flex: 1;
+	padding: 48px 60px;
+	background: #18181b;
+	border-radius: 1px;
+	margin: 0;
+	box-shadow: 0 8px 32px rgba(0,0,0,0.28);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.admin-user {
+	background: #23232a;
+	border-radius: 16px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+	padding: 32px 28px;
+	margin-bottom: 32px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.admin-user h1 {
+	font-size: 2.2rem;
+	font-weight: 700;
+	color: #6366f1;
+	margin: 0;
+	letter-spacing: 1px;
+}
+
+
+/* Hide right suggestions if present */
+.rightbar, .suggestions {
+	display: none !important;
+}
+
+body {
+	background: #18181b !important;
+}
+
+html {
+	background: #18181b !important;
+}
+
+/* Remove any white border or shadow from main container */
+.app, .admin_feed, .sidebar, .admin-user {
+	border: none !important;
+	box-shadow: none !important;
+}
+
+/* Remove any white background from other elements */
+* {
+	background: transparent;
+	box-shadow: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+	.app {
+		flex-direction: column;
+		background: #18181b;
+	}
+	.sidebar {
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+		border-right: none;
+		border-bottom: 1px solid #23232a;
+		box-shadow: none;
+		padding: 16px 0;
+		background: #18181b;
+	}
+	.admin_feed {
+		margin: 0;
+		border-radius: 0;
+		padding: 24px 10px;
+		background: #18181b;
+	}
+}
+/* Dashboard Custom Styles - Navbar remains unchanged */
+
+.app {
+	background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+	min-height: 100vh;
+	display: flex;
+}
+
+.feed {
+	flex: 1;
+	padding: 40px 60px;
+	background: rgba(255,255,255,0.85);
+	border-radius: 24px;
+	margin: 32px 0 32px 0;
+	box-shadow: 0 8px 32px rgba(60,72,88,0.12);
+}
+
+.admin-card {
+	background: #fff;
+	border-radius: 18px;
+	box-shadow: 0 4px 16px rgba(60,72,88,0.10);
+	padding: 32px 28px;
+	margin-bottom: 32px;
+	transition: box-shadow 0.2s;
+}
+.admin-card:hover {
+	box-shadow: 0 8px 32px rgba(60,72,88,0.18);
+}
+
+.admin-card__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 18px;
+}
+
+.admin-user h1 {
+	font-size: 2.2rem;
+	font-weight: 700;
+	color: #6366f1;
+	margin: 0;
+	letter-spacing: 1px;
+}
+
+.admin-icon-btn {
+	background: #eef2ff;
+	border: none;
+	border-radius: 50%;
+	padding: 10px 12px;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.admin-icon-btn:hover {
+	background: #c7d2fe;
+}
+
+/* Hide right suggestions if present */
+.rightbar, .suggestions {
+	display: none !important;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatX User Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="insta-bg">
+        <div class="insta-card">
+            <div class="insta-logo">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="insta-title">ChatX</div>
+            <form method="POST" class="insta-form">
+                {% csrf_token %}
+                <input type="text" id="username" name="username" placeholder="Username" required autofocus>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit" class="insta-btn">Log In</button>
+            </form>
+            <div class="insta-footer">© 2025 ChatX Admin</div>
+        </div>
+    </div>
+</body>
+
+
+
+<style>
+body {
+    font-family: 'Inter', 'Roboto', Arial, sans-serif;
+    background: #181818;
+    margin: 0;
+    padding: 0;
+}
+.insta-bg {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #23232b 0%, #181818 100%);
+}
+.insta-card {
+    background: #23232b;
+    border: 1px solid #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+    width: 350px;
+    padding: 40px 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.insta-logo {
+    margin-bottom: 12px;
+}
+.insta-logo i {
+    font-size: 3rem;
+    color: #e1306c;
+}
+.insta-title {
+    font-family: 'Roboto', 'Inter', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 28px;
+    letter-spacing: 1px;
+}
+.insta-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.insta-form input {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #181818;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s, background 0.2s;
+}
+.insta-form input:focus {
+    border: 1.5px solid #e1306c;
+    background: #23232b;
+}
+.insta-btn {
+    width: 100%;
+    padding: 12px 0;
+    background: linear-gradient(90deg, #e1306c 0%, #fdc468 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    transition: background 0.2s;
+}
+.insta-btn:hover {
+    background: linear-gradient(90deg, #fdc468 0%, #e1306c 100%);
+}
+.insta-footer {
+    margin-top: 32px;
+    color: #aaa;
+    font-size: 0.95rem;
+    text-align: center;
+}
+</style>
+</html>

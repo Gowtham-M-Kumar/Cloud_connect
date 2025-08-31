@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="/static/css/settings.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="settings-container">
+        <aside class="sidebar">
+        <div class="brand">
+          <i class="fa-brands fa-instagram"></i>
+          <span>ChatX</span>
+        </div>
+        <nav class="nav">
+          <a class="nav__item nav__item--active" href="/">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+          <a class="nav__item" href="/explore/"><i class="fa-regular fa-compass"></i><span>Explore</span></a>
+          <a class="nav__item" href="#"><i class="fa-regular fa-play-circle"></i><span>Reels</span></a>
+          <a class="nav__item" href="/notifications/"><i class="fa-regular fa-bell"></i><span>Notifications</span></a>
+          <a class="nav__item" href="/create/"><i class="fa-regular fa-square-plus"></i><span>Create</span></a>
+          <a class="nav__item" href="/profile/"><i class="fa-regular fa-user"></i><span>Profile</span></a>
+        </nav>
+        <div class="sidebar__footer">
+          <a class="nav__item" href="/settings/"><i class="fa-solid fa-gear"></i><span>Settings</span></a>
+        </div>
+      </aside>
+      
+        <main class="settings-main">
+            <div class="profile-header">
+                <img src="/static/img/profile.png" alt="Profile" class="profile-img">
+                <div class="profile-info">
+                    <span class="profile-username">_gwt.m._</span>
+                    <span class="profile-name">gowtham</span>
+                </div>
+                <button class="change-photo-btn">Change photo</button>
+            </div>
+            <form class="settings-form">
+                <label for="website">Website</label>
+                <input type="text" id="website" name="website" placeholder="Website">
+                <small>Editing your link is only available on mobile. Visit the Instagram app and edit your profile to change the websites in your bio.</small>
+
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio" maxlength="150" placeholder="Bio"></textarea>
+                <span class="bio-count">0 / 150</span>
+
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

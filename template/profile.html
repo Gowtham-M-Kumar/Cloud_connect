@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Profile • ChatX{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/profile.css' %}">
+<div class="profile-container">
+  <div class="profile-header">
+    <img class="profile-avatar" src="https://picsum.photos/seed/profile3/400/400" alt="Profile Avatar" />
+    <div class="profile-info">
+      <div class="profile-username">_gwt.m_</div>
+      <div class="profile-actions">
+    <a href="/edit-profile/" class="btn btn-primary">Edit profile</a>
+        <button><i class="fa-solid fa-gear"></i></button>
+      </div>
+      <div class="profile-stats">
+        <span><strong>2</strong> posts</span>
+        <span><strong>1,306</strong> followers</span>
+        <span><strong>1,100</strong> following</span>
+      </div>
+      <div class="profile-bio">gowtham</div>
+    </div>
+  </div>
+  <div class="profile-posts">
+    <div class="post-thumb"><img src="https://picsum.photos/seed/profile1/400/400" alt="Post 1" /></div>
+    <div class="post-thumb"><img src="https://picsum.photos/seed/profile2/400/400" alt="Post 2" /></div>
+    <div class="post-thumb"><img src="https://picsum.photos/seed/profile3/400/400" alt="Post 3" /></div>
+  </div>
+</div>
+{% endblock %}

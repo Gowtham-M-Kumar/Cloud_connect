@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}ChatX{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <i class="fa-brands fa-instagram"></i>
+          <span>ChatX</span>
+        </div>
+        <nav class="nav">
+          <a class="nav__item nav__item--active" href="/">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+          <a class="nav__item" href="/explore/"><i class="fa-regular fa-compass"></i><span>Explore</span></a>
+          <a class="nav__item" href="#"><i class="fa-regular fa-play-circle"></i><span>Reels</span></a>
+          <a class="nav__item" href="/notifications/"><i class="fa-regular fa-bell"></i><span>Notifications</span></a>
+          <a class="nav__item" href="/create/"><i class="fa-regular fa-square-plus"></i><span>Create</span></a>
+          <a class="nav__item" href="/profile/"><i class="fa-regular fa-user"></i><span>Profile</span></a>
+        </nav>
+        <div class="sidebar__footer">
+          <a class="nav__item" href="/settings/"><i class="fa-solid fa-gear"></i><span>Settings</span></a>
+        </div>
+      </aside>
+      <main>
+        {% block content %}{% endblock %}
+      </main>
+      <aside class="rightbar">
+        <div class="me">
+          <img class="me__avatar" src="https://i.pravatar.cc/64?img=15" alt="" />
+          <div class="me__meta">
+            <div class="me__name">gwt.m_</div>
+            <div class="me__sub">gowtham</div>
+          </div>
+        </div>
+        <div class="suggestions">
+          <div class="suggestions__title">Suggested for you</div>
+          <div class="suggestion">
+            <img src="https://i.pravatar.cc/48?img=20" alt="" />
+            <div class="meta"><div class="name">__user_21_</div></div>
+            <button class="link">Follow</button>
+          </div>
+        </div>
+        <footer class="meta-links">
+          <a href="#">About</a> · <a href="#">Help</a> · <a href="#">Press</a> · <a href="#">API</a> · <a href="#">Jobs</a> · <a href="#">Privacy</a>
+          <div class="copyright">© 2025 ChatX FROM META</div>
+        </footer>
+      </aside>
+    </div>
+  </body>
+</html>

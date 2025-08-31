@@ -1,0 +1,32 @@
+.notifications-container {
+  max-width: 600px;
+  margin: 40px auto;
+  color: #fff;
+}
+.notification-card {
+  display: flex;
+  align-items: center;
+  background: #181818;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.notification-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 16px;
+  object-fit: cover;
+}
+.notification-content {
+  flex: 1;
+}
+.notification-message {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+.notification-time {
+  font-size: 0.9rem;
+  color: #aaa;
+}

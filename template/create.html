@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Create Post • ChatX{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/create.css' %}">
+<div class="create-container">
+  <h2>Create New Post</h2>
+  <form class="create-form" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="create-upload">
+      <label for="image-upload" class="upload-label">
+        <i class="fa-regular fa-image"></i>
+        <span>Select Image</span>
+      </label>
+      <input type="file" id="image-upload" name="image" accept="image/*" required>
+    </div>
+    <div class="create-caption">
+      <textarea name="caption" rows="3" placeholder="Write a caption..." maxlength="2200"></textarea>
+    </div>
+    <button type="submit" class="create-btn">Share</button>
+  </form>
+</div>
+{% endblock %}

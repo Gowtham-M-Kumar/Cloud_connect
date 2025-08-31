@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Notifications • ChatX{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/notifications.css' %}">
+<div class="notifications-container">
+  <h2>Notifications</h2>
+  <div class="notification-card">
+    <img class="notification-avatar" src="https://i.pravatar.cc/48?img=21" alt="User" />
+    <div class="notification-content">
+      <div class="notification-message"><strong>alex_99</strong> liked your photo.</div>
+      <div class="notification-time">2m ago</div>
+    </div>
+  </div>
+  <div class="notification-card">
+    <img class="notification-avatar" src="https://i.pravatar.cc/48?img=22" alt="User" />
+    <div class="notification-content">
+      <div class="notification-message"><strong>new_media</strong> started following you.</div>
+      <div class="notification-time">10m ago</div>
+    </div>
+  </div>
+  <div class="notification-card">
+    <img class="notification-avatar" src="https://i.pravatar.cc/48?img=23" alt="User" />
+    <div class="notification-content">
+      <div class="notification-message"><strong>gwt.m_</strong> mentioned you in a comment.</div>
+      <div class="notification-time">1h ago</div>
+    </div>
+  </div>
+  <!-- Add more notification cards as needed -->
+</div>
+{% endblock %}

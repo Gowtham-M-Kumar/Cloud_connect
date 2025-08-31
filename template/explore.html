@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Explore • ChatX{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/explore.css' %}">
+
+
+<div class="explore-container">
+  <div class="explore-grid">
+    <div class="explore-thumb">
+      <img src="https://picsum.photos/seed/explore1/400/400" alt="Post 1" />
+      <span class="explore-icon"><i class="fa-solid fa-clapperboard"></i></span>
+    </div>
+    <div class="explore-thumb">
+      <img src="https://picsum.photos/seed/explore2/400/400" alt="Post 2" />
+      <span class="explore-icon"><i class="fa-solid fa-clapperboard"></i></span>
+    </div>       
+  </div>
+</div>
+{% endblock %}
